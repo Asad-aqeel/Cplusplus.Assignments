@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float Floatnumber;
+    float pi = 3.14;
+
+    
+   cout << "Enter a float: ";
+    cin >> Floatnumber;
+
+    
+    if (Floatnumber > pi) {
+        cout << "\"greater\"" << endl;
+    }
+     else {
+        cout << "\"not greater\"" << endl;
+    }
+
+    return 0;
+}
+
