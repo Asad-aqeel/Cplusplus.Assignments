@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+/*void swap(int a, int b)
+{
+
+    int temp = a;
+    a = b;
+    b = temp;
+}*/
+
+void pointer(int *a, int *b)
+{
+
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main()
+{
+
+    int d = 5, z = 9;
+
+    cout << "The value of d is " << d << " and the value of z is " << z << endl;
+
+    pointer(&d, &z);
+
+    cout << "The value of d is " << d << " and the value of z is " << z << endl;
+
+    return 0;
+}
